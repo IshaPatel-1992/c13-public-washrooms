@@ -1,0 +1,37 @@
+Data: https://data.calgary.ca/Government/Public-Washrooms-Map/tssn-kski
+
+Tasks: where is the public washrooms?
+=> *****
+=>TP?
+=>Clean?
+=>Public Washroom? 
+
+Step 1: Export Data as 'CSV' and Insert data in MongoDB compass
+Step 2: Create an app folder to Visualstudio
+Step 3: Replace words with washroom/washrooms where Superhero/heores
+Step 4: Run the application see the list of washrooms
+Step 5: Go to MonDB Compass (Recreate dataset with following fields only)
+COMMON_NAME:name
+BLD_ADDRESS:address
+MULTIPOLYGON:coordinates
+GLOBALID: city_globalid
+Step 6: Search for MongoDB GeoJson Objects 
+https://www.mongodb.com/docs/manual/reference/geojson/
+const coordinates = process.argv[4].split(',')
+const lon = Number/parseFloat(coordinates[0])
+const lat = Number/parseFloat(coordinates[1])
+const location = {
+    type: "Point",
+    coordinates: [lon, lat]
+}
+https://www.npmjs.com/package/wkt
+
+run a code in Terminal 
+>>cd .. server/washrooms
+>>node createWashroom.js
+>>$ node createWashroom "Central Library Public Washrooms" -114.05490948879357,51.04539096225412 "800 3 St SE"
+>>node createWashroom "Central Library Public Washrooms" -114.05490948879357,51.04539096225412 "800 1 St SE"
+
+++++ Get Longitude & Latitude from Google Maps ++++++
+51.04539096225412, -114.05490948879357
+

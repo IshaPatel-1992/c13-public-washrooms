@@ -1,0 +1,18 @@
+$ node superhero/createhero.js Flash "super speed,iridescent leotard"
+$ node superhero/createhero.js batman "best speed,execute"
+$ node superhero/createhero.js Spiderman "spider strength,web shooting,spidersense,spidercrawl"
+$ node superhero/createhero.js Superman "flight,super strength,laser-eyes,invisible"
+
+
+cd server
+npm install
+npm start
+
+Point your browser at localhost:3000
+http://localhost:3000/api/superhero
+
+
+Pass the parameters to URL 
+[Parameters Key -> Value]
+[Parameter values have spaces like Washington DC => Washington+DC
+http://localhost:3000/api/superhero?name=Flash&city=Washigton+DC 
