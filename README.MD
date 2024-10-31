@@ -1,4 +1,6 @@
-# Project 2 Starter
+# Project 2 - Prework 
+
+It contains access data from City of Calgary and display on webpage using MongoDB and NodeJS
 
 ```
 cd server
